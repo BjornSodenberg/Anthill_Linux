@@ -1,0 +1,15 @@
+called: g++
+	/home/bjornsod/workspace/Anthill_Linux
+	g++
+	-g
+	-std=c++11
+	main.cpp
+	Menu.cpp
+	Ants.cpp
+	Game.cpp
+	AG.hpp
+	-o
+	bin/Tests/Menutest
+	-lpanel
+	-lncurses
+

@@ -1,0 +1,43 @@
+g++ -g -std=c++11 main.cpp Menu.cpp Ants.cpp Game.cpp AG.hpp -o bin/Tests/Menutest -lpanel -lncurses
+In file included from Game.hpp:5:0,
+                 from Menu.hpp:5,
+                 from main.cpp:1:
+AG.hpp: In member function ‘void Mother::MotherPlace()’:
+AG.hpp:12:5: error: ‘ant_setting’ was not declared in this scope
+     ant_setting ant_mother;
+     ^
+AG.hpp:13:5: error: ‘ant_mother’ was not declared in this scope
+     ant_mother.x = 13;
+     ^
+In file included from Game.hpp:5:0,
+                 from Menu.hpp:5,
+                 from Menu.cpp:1:
+AG.hpp: In member function ‘void Mother::MotherPlace()’:
+AG.hpp:12:5: error: ‘ant_setting’ was not declared in this scope
+     ant_setting ant_mother;
+     ^
+AG.hpp:13:5: error: ‘ant_mother’ was not declared in this scope
+     ant_mother.x = 13;
+     ^
+In file included from Ants.cpp:1:0:
+Ants.hpp:26:3: warning: ‘typedef’ was ignored in this declaration
+   };
+   ^
+In file included from Game.hpp:5:0,
+                 from Game.cpp:1:
+AG.hpp: In member function ‘void Mother::MotherPlace()’:
+AG.hpp:12:5: error: ‘ant_setting’ was not declared in this scope
+     ant_setting ant_mother;
+     ^
+AG.hpp:13:5: error: ‘ant_mother’ was not declared in this scope
+     ant_mother.x = 13;
+     ^
+AG.hpp: In member function ‘void Mother::MotherPlace()’:
+AG.hpp:12:5: error: ‘ant_setting’ was not declared in this scope
+     ant_setting ant_mother;
+     ^
+AG.hpp:13:5: error: ‘ant_mother’ was not declared in this scope
+     ant_mother.x = 13;
+     ^
+Makefile:10: recipe for target 'MenuTests' failed
+make: *** [MenuTests] Error 1
